@@ -3,3 +3,7 @@
 html{
     background-color: gray;
 }
+
+img{
+    filter: opacity(70%);
+}
