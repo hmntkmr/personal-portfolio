@@ -1,0 +1,35 @@
+ 
+@font-face{
+    font-family: "Autograf";
+    src: url("../../assets/fonts/Autograf.ttf");
+}
+
+
+.brand{
+    font-family: "Autograf";
+    font-size: 5vw;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: rgba(24, 22, 22, 0.911);
+}
+
+.navbar-toggle .icon-bar{
+    background-color: ivory;
+}
+
+ul>li {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+ul li a {
+    color:black;
+    text-decoration: none;
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+    text-decoration: none;
+    background-color: transparent !important;
+}
+
+

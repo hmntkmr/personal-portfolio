@@ -1,0 +1,37 @@
+/* importing font */
+
+@font-face{
+    font-family: "Halimun";
+    src: url("../../assets/fonts/Halimun.ttf");
+}
+
+
+@font-face{
+    font-family: "Lunabar";
+    src: url("../../assets/fonts/luna-bar.ttf");
+}
+.bg {
+	background-image: url('../../assets/images/toronto-landing.png');
+    background-repeat: no-repeat;
+    background-color: gray;
+	background-position: top;
+    background-size: contain;
+    height: 100vh;  
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.name {
+    font-family: 'Halimun';
+    font-size: 4vw;
+    font-weight: bold;
+    font-stretch: condensed;
+    letter-spacing: 0em;
+    color: ivory;
+}
+
