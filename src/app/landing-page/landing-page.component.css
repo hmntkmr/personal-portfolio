@@ -20,10 +20,10 @@ main{
 
 .name {
     font-family: 'Halimun';
-    font-size: 4vw;
+    font-size: 4.37vw;
     font-weight: bold;
-    font-stretch: condensed;
-    letter-spacing: 0em;
+    font-stretch: ultra-expanded;
+    letter-spacing: 0.00062em;
     color: ivory;
 }
 
