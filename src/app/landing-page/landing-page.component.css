@@ -16,14 +16,15 @@ main{
     top: 50%;
     left:50%;
     transform: translate(-50%,-50%);
+    width: 100%;
 }
 
 .name {
     font-family: 'Halimun';
-    font-size: 4.37vw;
+    font-size: 4vw;
     font-weight: bold;
-    font-stretch: ultra-expanded;
-    letter-spacing: 0.00062em;
+    /* font-stretch: ultra-expanded; */
+    /* letter-spacing: 0.00062em; */
     color: ivory;
 }
 
