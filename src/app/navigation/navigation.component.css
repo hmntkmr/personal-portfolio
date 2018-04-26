@@ -7,21 +7,22 @@
 
 .brand{
     font-family: "Autograf";
-    font-size: 5vw;
-    padding-left: 1em;
-    padding-right: 1em;
+    font-size: 7vw;
     color: rgba(24, 22, 22, 0.911);
 }
 
 .navbar-toggle .icon-bar{
-    background-color: ivory;
+    background-color: black;
 }
 
-ul>li {
-    padding-left: 1em;
-    padding-right: 1em;
+ul>li{
+    padding-right: 0.5em;
 }
 
+ul>li>button{
+    background-color: transparent;
+    border-color: black;
+}
 ul li a {
     color:black;
     text-decoration: none;
