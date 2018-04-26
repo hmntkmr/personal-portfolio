@@ -22,26 +22,26 @@
     src: url("assets/fonts/Tahu.ttf");
 }
 
+@font-face{
+    font-family: "CustomFont";
+    src: url("assets/fonts/Gloss_And_Bloom.ttf");
+}
 
 html{
-    background-color: gray;
+    background-color: rgba(199, 191, 130, 0.685);
 }
 
 img{
     filter: grayscale(1) opacity(0.5);
 }
 
-
-
-img :hover{
-    transition: transform .1s ease-out;
-}
-
 .text-container{
         position: relative;
         text-align: center;
         color: black;
-        font-family: 'Halimun', cursive;
+        font-family: 'CustomFont', cursive;
+        font-size: 6vw;
+
 }
 
 .text-overlay {

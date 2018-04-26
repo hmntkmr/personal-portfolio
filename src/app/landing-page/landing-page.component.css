@@ -2,7 +2,6 @@
 .bg {
 	background-image: url('../../assets/images/toronto-landing.png');
     background-repeat: no-repeat;
-    background-color: gray;
 	background-position: bottom;
     background-size: contain;
     padding-top: 2em;
@@ -20,11 +19,11 @@ main{
 }
 
 .name {
-    font-family: 'Halimun';
-    font-size: 4vw;
-    font-weight: bold;
+    font-family: 'CustomFont';
+    font-size: 8vw;
+    /* font-weight: bold; */
     /* font-stretch: ultra-expanded; */
     /* letter-spacing: 0.00062em; */
-    color: ivory;
+    color: rgba(240, 13, 13, 0.637);
 }
 
