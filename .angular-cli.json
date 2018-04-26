@@ -25,6 +25,7 @@
         "../node_modules/fullpage.js/dist/jquery.fullpage.css"
       ],
       "scripts": [
+        "../node_modules/fullpage.js/dist/jquery.fullpage.min.js",
         "../node_modules/jquery/dist/jquery.min.js",
         "../node_modules/bootstrap/dist/js/bootstrap.min.js",
         "../src/plug-ins.js"
