@@ -10,6 +10,12 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { BlogComponent } from './blog/blog.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
+import { ProfileHeaderComponent } from './profile-header/profile-header.component';
+import { ProfileMainComponent } from './profile-main/profile-main.component';
+import { ContactsMapComponent } from './contacts-map/contacts-map.component';
+import { ContactsSocialComponent } from './contacts-social/contacts-social.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { WorkComponent } from './work/work.component';
 
 
 @NgModule({
@@ -20,7 +26,13 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
     FooterComponent,
     ContactComponent,
     BlogComponent,
-    ProfilePageComponent
+    ProfilePageComponent,
+    ProfileHeaderComponent,
+    ProfileMainComponent,
+    ContactsMapComponent,
+    ContactsSocialComponent,
+    ContactFormComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,

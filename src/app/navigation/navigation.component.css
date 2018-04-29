@@ -22,14 +22,18 @@ ul>li{
 ul>li>button{
     background-color: transparent;
     border-color: black;
+    font-family: 'Cabin Sketch';
+  
 }
 ul li a {
     color:black;
+    font-family: 'Cabin Sketch';
     text-decoration: none;
 }
 
 .nav>li>a:focus, .nav>li>a:hover{
     text-decoration: none;
+    font-family: 'Cabin Sketch';
     background-color: transparent !important;
 }
 
