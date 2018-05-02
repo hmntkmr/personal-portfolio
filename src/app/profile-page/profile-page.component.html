@@ -7,13 +7,14 @@
   <div class="jumbotron">
     <div class="media container">
       <div class="media-left media-middle">
-        <img class="media-object img-rounded " src="../../assets/images/profile-picture.jpg" style="height: 200px; width: 200px;"
+        <img class="media-object img-thumbnail " src="../../assets/images/profile-picture.jpeg" style="height: 250px; width: 250px;"
           alt="...">
       </div>
       <div class="media-body media-right">
         <h1 class="media-heading">Hemant Kumar</h1>
         <h2>Front End Developer</h2>
         <h3>Toronot, ON</h3>
+        <code class="text-justify">I believe, I can bring a great deal of value to your organization because of my experience in Database Administrations, extensive knowledge of several Programming Languages, Diligent Work Ethic and a passion for Learning.</code>
       </div>
     </div>
   </div>
@@ -33,56 +34,122 @@
         <a href="#skills" aria-controls="skills" role="tab" data-toggle="tab">Skills</a>
       </li>
       <li role="presentation">
-        <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Experience</a>
+        <a href="#experience" aria-controls="messages" role="tab" data-toggle="tab">Experience</a>
       </li>
       <li role="presentation">
-        <a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Professional Developement</a>
+        <a href="#certi" aria-controls="settings" role="tab" data-toggle="tab">Certifications</a>
       </li>
     </ul>
 
     <!-- Tab panes -->
     <div class="tab-content">
+      <!-- Education -->
       <div role="tabpanel" class="tab-pane active fade in active " id="education">
         <div class="page-header">
           <h1>
             <u>Education</u>
           </h1>
-          <h2>Business Intelligence and System Infrastructure
-            <small>
-              <span>Algonquin College</span>
-              <span class="pull-right">2016</span>
-            </small>
-          </h2>
-          <h2>Interactive Media Management
-            <small>
-              <span>Algonquin College</span>
-              <span class="pull-right">2015</span>
-            </small>
-          </h2>
-          <h2>Bachelors of Computer Application
-            <small>
-              <span>Panjab University</span>
-              <span class="pull-right">2014</span>
-            </small>
-          </h2>
+        </div>
+        <div class="panel panel-default" *ngFor="let prog of education">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <h2>
+                {{ prog.programName }}
+                <small>
+                  <span>{{ prog.collegeName }}</span>
+                  <span class="pull-right">{{ prog.graduationYear }}</span>
+                </small>
+              </h2>
+            </h3>
+          </div>
+          <div class="panel-body">
+            <h3>
+              Courses
+            </h3>
+            <ul *ngFor="let course of prog.courses" class="text-capitalize skills">
+              <li>{{course}}</li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div role="tabpanel" class="tab-pane fade" id="skills">
-        <h1>
-          <u>Skills</u>
-        </h1>
+
+      <!-- Skills Tab -->
+      <div role="tabpanel" class="tab-pane fade" id="skills" *ngFor="let item of skills">
+          <div class="page-header">
+              <h1>
+                <u>Skills</u>
+              </h1>
+            </div>
+         <div class="panel panel-default" *ngFor="let item of skills">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <h2 class="text-capitalize">
+                {{item.group}}
+              </h2>
+            </h3>
+          </div>
+          <div class="panel-body">
+            <ul *ngFor="let skills of item.skill" class="skills">
+              <li class="text-capitalize">{{skills}}</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div role="tabpanel" class="tab-pane fade" id="messages">
-        <h1>
-          <u>Experience</u>
-        </h1>
+      <!-- Experience -->
+      <div role="tabpanel" class="tab-pane fade" id="experience">
+          <div class="page-header">
+              <h1>
+                <u>Experience</u>
+              </h1>
+            </div>
+            <div class="panel panel-default" *ngFor="let exp of experience">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <h2 class="text-capitalize">
+                      {{ exp.title }}
+                      <small>
+                        <span class="text-capitalize">{{ exp.company }}</span>
+                        <span class="pull-right">{{ exp.year }}</span><small>{{exp.place}}</small>
+                      </small>
+                    </h2>
+                  </h3>
+                </div>
+                <div class="panel-body">
+                  <h3>
+                    Job Responsibilities
+                  </h3>
+                  <ul *ngFor="let responsibilities of exp.role" class="text-capitalize">
+                    <li>{{responsibilities}}</li>
+                  </ul>
+                </div>
+              </div>
       </div>
-      <div role="tabpanel" class="tab-pane fade" id="settings">
-        <h1>
-          <u>Certifications</u>
-        </h1>
+      <!--Proffessional developement  -->
+      <div role="tabpanel" class="tab-pane fade" id="certi">
+          <div class="page-header">
+              <h1>
+                <u>Certifications</u>
+              </h1>
+            </div>
+            <div class="panel panel-default" *ngFor="let certi of certifications">
+                <div class="panel-heading">
+                  <h3 class="panel-title">
+                    <h2 class="text-capitalize">
+                      {{certi.name}}
+                      <small>
+                      <span>{{certi.organization}}</span>
+                      <span class="pull-right">{{certi.year}}</span>
+                      </small>
+                    </h2>
+                  </h3>
+                </div>
+                <div class="panel-body">
+                  <ul *ngFor="let tech of certi.tech" class="skills">
+                    <li class="text-capitalize">{{tech}}</li>
+                  </ul>
+                </div>
+              </div>
       </div>
     </div>
-
   </div>
 </div>
