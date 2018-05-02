@@ -1,12 +1,29 @@
-<footer class="footer">
+<!-- <footer class="footer">
   <div class="container">
-    <a href="" routerLink="/contact" data-toggle="tooltip" data-placement="left" title="Contact">
-      <!-- <i class="fa fa-address-card fa-2x"></i> -->
+    <a href="" routerLink="/contact">
+      <!-- <i class="fa fa-address-card fa-2x"></i> --
       Contact
     </a> |
-    <a href="" routerLink="/blog" data-toggle="tooltip" data-placement="right" title="Blog">
-      <!-- <i class="fa fa-rss fa-2x"></i> -->
+    <a href="" routerLink="/blog">
+      <!-- <i class="fa fa-rss fa-2x"></i> --
       Blog
     </a>
   </div>
-</footer>
+</footer> -->
+
+
+<div class="container">
+    <div class="row text-center">
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <app-contacts-social></app-contacts-social>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <app-contacts-map></app-contacts-map>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <app-contact-form></app-contact-form>
+      </div>
+    </div>
+  </div>
+
+

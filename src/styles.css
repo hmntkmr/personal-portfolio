@@ -2,6 +2,10 @@
 
 /* importing font */
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
+
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700');
+
 @font-face{
     font-family: "Halimun";
     src: url("assets/fonts/Halimun.ttf");
@@ -28,12 +32,12 @@
 }
 
 html{
-    background-color: rgba(199, 191, 130, 0.685);
+    background-color: rgba(36, 36, 35, 0.774);
 }
 
-img{
-    filter: grayscale(1) opacity(0.5);
-}
+.positioning{
+    padding-top: 5vh;
+  }
 
 .text-container{
         position: relative;

@@ -1,14 +1,11 @@
 
+// for tooltip
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
 });
 
-$(document).ready(function() {
-    $('#fullpage').fullpage({
-        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
-        menu: '#menu',
-        scrollingSpeed: 1000
-    });
-
-});
+// for pills
+$('#myTabs a').click(function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+  })
